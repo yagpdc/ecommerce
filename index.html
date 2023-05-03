@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/612fc1356e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Manga Commerce</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/logo.svg" alt="logo" />
+      </div>
+      <form id="formSearch" action="">
+        <input type="text" placeholder="Search" />
+        <button id="btnSearch" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div class="menu-links">
+        <a id="size" href="#footer-container">Contact</a>
+        <a id="open-modal"> Cart </a>
+        <a id="open-login"> Login </a>
+      </div>
+      <div id="fadeLogin" class="hide"></div>
+      <div id="fade" class="hide"></div>
+      <div id="login" class="hide">
+        <div class="modal-header">
+          <p>Login</p>
+        </div>
+        <label id="labelnome" for="idnome">Username</label>
+        <input type="text" id="idnome" placeholder="Username..." />
+        <label id="labelsenha" for="idsenha">Password</label>
+        <input type="password" id="idsenha" placeholder="Password..." />
+        <div class="extraForInput">
+          <input type="checkbox" name="remeber" id="checkRemember" />
+          <label for="checkRemember">Remember me</label>
+        </div>
+        <button id="btn-login">Login</button>
+      </div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+          <p>My cart</p>
+          <button id="close-modal"><svg fill="#000000" width="256px" height="256px" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.608"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z"></path> </g></svg></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-item-group">
+            <div class="item-img"><img src="image/object3.jpg" alt=""></div>
+            <p class="cart-price">$499</p>
+          </div>
+          <div class="modal-item-group">
+            <div class="item-img"><img src="image/object3.jpg" alt=""></div>
+            <p class="cart-price">$499</p>
+          </div>
+          <div class="modal-item-group">
+            <div class="item-img"><img src="image/object3.jpg" alt=""></div>
+            <p class="cart-price">$499</p>
+          </div>
+          <div class="modal-item-group">
+            <div class="item-img"><img src="image/object3.jpg" alt=""></div>
+            <p class="cart-price">$499</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="categorias">
+      <ul>
+        <li><a class="categorias-item" href="">Top Sellers</a></li>
+        <li><a class="categorias-item" href="">All Products</a></li>
+        <li><a class="categorias-item" href="">Offers and Promotions</a></li>
+        <li><a class="categorias-item" href="">Packages</a></li>
+      </ul>
+    </div>
+    <!-- end navbar  -->
+    <!-- fisrt section -->
+    <!-- carrossel -->
+    <section class="first-page">
+      <div class="carousel-container">
+        <div class="carousel">
+          <button class="carousel-btn" id="btn-left">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7071 4.29289C12.0976 4.68342 12.0976 5.31658 11.7071 5.70711L6.41421 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H6.41421L11.7071 18.2929C12.0976 18.6834 12.0976 19.3166 11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929L10.2929 4.29289C10.6834 3.90237 11.3166 3.90237 11.7071 4.29289Z" fill="#000000"></path> </g></svg>
+          </button>
+          <button class="carousel-btn" id="btn-right">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z" fill="#000000"></path> </g></svg>
+          </button>
+          <div class="carousel-item">
+            <img src="/carousel/d7389hm-fc81adce-ad8e-486d-8d24-0de175f0c571.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="/carousel/IHUu0W.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="/carousel/uQcgpy.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="/carousel/W1BTfV.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="/carousel/yPE0bU.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fim do carrossel -->
+    <h1 class="titulo"> Top Sellers of the week</h1>
+    <div class="destaques">
+      <div class="right-side">
+        <img src="/image/object1.jpg" alt="" />
+        <img src="/image/object2.jpg" alt="" />
+        <img src="/image/object3.jpg" alt="" />
+        <img src="/image/object4.jpg" alt="" />
+        <img src="/image/object5.jpg" alt="" />
+        <img src="/image/object1.jpg" alt="" />
+        <img src="/image/object2.jpg" alt="" />
+      </div>
+    </div>
+    <!-- end of first section -->
+    <p class="titulo">Discover our products!</p>
+    <section class="second-page">
+        <div class="card">
+          <div class="card-img">
+          <img src="image/Mangás/demonslayer2.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="image/Mangás/demonslayer1.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="image/Mangás/punpun.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+      </div>
+    </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="image/Mangás/superman.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="image/Mangás/watchmen.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="image/Mangás/spy.jpg" alt="">
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title </p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+              <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+              <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="item-modal" class="hide">Item has been added to the Cart </div>
+      <footer>
+          <div id="footer-container">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod nisi ac accumsan. Aliquam fermentum tellus sed neque bibendum, vel tristique nibh rutrum.</p>
+              </div>
+              <div class="footer-col">
+                <h3>Follow us</h3>
+                <ul class="footer-list">
+                  <li><i class="fab fa-facebook"></i> Facebook</li>
+                  <li><i class="fab fa-twitter"></i> Twitter</li>
+                  <li><i class="fab fa-instagram"></i> Instagram</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </section>
+    <script src="app.js"></script>
+  </body>
+  </html>
+
